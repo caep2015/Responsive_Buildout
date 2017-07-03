@@ -1,0 +1,109 @@
+/*
+
+    Yellow : #ffffdd  sidebar content
+
+    BREAKPOINTS
+
+    600px
+    1100px
+
+*/
+/*body is the green background area */
+body{
+    font-family: Palatino, Times, serif;
+    background-color: #ddffdd; /*green*/
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ul{
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+h1, h2, h3{
+    color: #009999;
+}
+
+h2, h3{
+    margin-bottom: 0;
+}
+/* home about us & contact us */
+a{
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover{
+    color: blue;
+}
+
+/* header - only the area where the logo and nav links rest */
+header{
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddddff;   /* purple devider*/
+}
+/* white container everything sits in */
+#site_container{
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+#main_content {
+  background: #ddffff; /* blue */
+  /*padding: */
+  /*max-width:*/
+}
+
+#sidebar_content {
+  background: #ffffdd;
+}
+
+#site_footer {
+  background: #ffddaa;
+}
+/*  home about and contact us area logo and buttons sit */
+#main_nav{
+    text-align: center;
+
+}
+
+#logo {
+  width: 32.2%;
+}
+/* pink navigation span 2 of 3 */
+#main_nav a{
+    display: block;
+    padding: 10px 2%;
+    background: #ffdddd; /*pink*/
+    margin-bottom: 5px;
+    border-radius: 5px;
+    width: 66.1%;
+
+}
+
+#main_nav a:hover{
+    background: #ddddff;
+}
+@media screen and ( min-width: 600px ){
+   #main_nav a{
+        flex-basis: 45%;
+    }
+}
+
+@media screen and ( min-width: 900px ){
+    nav {
+        flex-wrap: nowrap;
+    }
+
+    #main_nav a{
+        flex-basis: 20%;
+    }
+}
