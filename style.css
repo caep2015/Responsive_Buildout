@@ -39,7 +39,7 @@ header{
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;   /* purple devider*/
-    text-align: center;
+    /*text-align: center;  note: center this in the media query* /
 }
 
 
@@ -178,7 +178,7 @@ Style items to create 3 columns
     }
     */
     main_content div {
-      
+
     }
 }
 
