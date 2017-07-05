@@ -1,14 +1,8 @@
-/*
+/* Reponsive Layout - Project 0703 */
 
-    Yellow : #ffffdd  sidebar content
+/**Mobile default styles** FIRST */
 
-    BREAKPOINTS
-
-    600px
-    1100px
-
-*/
-/*body is the green background area */
+/*body background green all viewports */
 body{
     font-family: Palatino, Times, serif;
     background-color: #ddffdd; /*green*/
@@ -23,7 +17,7 @@ ul{
 }
 
 h1, h2, h3{
-    color: #009999;
+    color:  #009999;/* teal */
 }
 
 h2, h3{
@@ -35,7 +29,7 @@ a{
     color: red;
     text-decoration: none;
 }
-
+/*navigation only */
 a:hover{
     color: blue;
 }
@@ -46,7 +40,15 @@ header{
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;   /* purple devider*/
 }
-/* white container everything sits in */
+
+
+/* #site_container = white container
+spans >4 columns in desktop view
+spans 3 columns in tablet view
+spans 1 column in mobile
+*/
+
+/*white container*/
 #site_container{
     padding: 20px;
     max-width: 1100px;
@@ -56,49 +58,76 @@ header{
     border-radius: 5px;
 }
 
+/*blue container*/
 #main_content {
   background: #ddffff; /* blue */
   /*padding: */
   /*max-width:*/
 }
-
-#sidebar_content {
-  background: #ffffdd;
+#logo {
+  /*iteself did not center*/
 }
 
-#site_footer {
-  background: #ffddaa;
+h1 #logo {
+/*not sure how to center for mobile */
 }
+
 /*  home about and contact us area logo and buttons sit */
 #main_nav{
     text-align: center;
-
 }
 
-#logo {
-  width: 32.2%;
-}
-/* pink navigation span 2 of 3 */
+/* pink navigation labels - span 2 of 3 */
 #main_nav a{
     display: block;
     padding: 10px 2%;
     background: #ffdddd; /*pink*/
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 66.1%;
+    width: 95%;
 
 }
-
+/*makes pink navigation buttons turn purple */
 #main_nav a:hover{
-    background: #ddddff;
+    background: #ddddff; /*purple*/
 }
+
+
+/*yellow container*/
+#sidebar_content {
+  background: #ffffdd;
+}
+/*footer orange container*/
+#site_footer {
+  background: #ffddaa;/*orange*/
+  /*needs  same as nav buttons*/
+  font-size: 0.8.em;/*
+  padding: 20px?;
+  margin-top: 20px;
+  text-align: center;
+  flex-basis: 100%;
+
+  */
+}
+
+#site_footer a {
+
+}
+
+
+/** 600 breakpoint**/
 @media screen and ( min-width: 600px ){
    #main_nav a{
         flex-basis: 45%;
     }
-}
 
-@media screen and ( min-width: 900px ){
+    /*add breakpoints here to
+
+Style items to create 3 columns
+    */
+}
+/** DESKTOP STYLES **/
+@media screen and ( min-width: 1100px ){
     nav {
         flex-wrap: nowrap;
     }
