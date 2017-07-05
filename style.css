@@ -66,6 +66,7 @@ spans 1 column in mobile
   /*padding: */
   /*max-width:*/
 }
+
 #logo {
   /*no changes needed in #logo*/
 }
@@ -89,7 +90,6 @@ h1 #logo {
     border-radius: 5px;
     width: 95%;
 
-
 }
 /*makes pink navigation buttons turn purple */
 #main_nav a:hover{
@@ -104,6 +104,7 @@ h1 #logo {
   /*padding: */
   /*max-width:*/
 }
+
 /*footer orange container*/
 #site_footer {
   background: #ffddaa;/*orange*/
@@ -119,7 +120,7 @@ h1 #logo {
 }
 
 #site_footer a {
-
+/*does not need sytling*/
 }
 
 
@@ -148,6 +149,42 @@ Style items to create 3 columns
     }
 
     #main_nav a{
-        flex-basis: 20%;
+        flex: 1;
+        flex-wrap:nowrap;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    }
+    /* create two column layout with the two p tags in desktop view ONLY*/
+
+    #main_content {
+      display: flex;
+      /*flex-flow: row wrap;*/
+      /*justify-content: space-between;*/
+
+    #main_content {
+      flex: 1 100%;
+    }
+
+/* these next two entries are not changing it...target the div next
+    #main_content p {
+      flex: 0 1 60%;
+      margin-top: 0;
+    }
+
+    #main_content p:last-child ul{
+      flex: 0 1 35%;
+    }
+    */
+    main_content div {
+      
     }
 }
+
+/*
+06:00 am things to do when I get back to my computer:
+- add a breakpoint for mobile view and add the centering of the logo there
+- add the breakpoints for the blue and yellow boxes.
+- submit last change to github
+*/
