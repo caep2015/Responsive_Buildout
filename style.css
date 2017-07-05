@@ -39,6 +39,7 @@ header{
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;   /* purple devider*/
+    text-align: center;
 }
 
 
@@ -61,15 +62,17 @@ spans 1 column in mobile
 /*blue container*/
 #main_content {
   background: #ddffff; /* blue */
+  border-radius: 5px;
   /*padding: */
   /*max-width:*/
 }
 #logo {
-  /*iteself did not center*/
+  /*no changes needed in #logo*/
 }
 
 h1 #logo {
-/*not sure how to center for mobile */
+/*this part is centered in the mobile view*/
+
 }
 
 /*  home about and contact us area logo and buttons sit */
@@ -77,7 +80,7 @@ h1 #logo {
     text-align: center;
 }
 
-/* pink navigation labels - span 2 of 3 */
+/* pink navigation labels - column in mobile */
 #main_nav a{
     display: block;
     padding: 10px 2%;
@@ -85,6 +88,7 @@ h1 #logo {
     margin-bottom: 5px;
     border-radius: 5px;
     width: 95%;
+
 
 }
 /*makes pink navigation buttons turn purple */
@@ -96,15 +100,19 @@ h1 #logo {
 /*yellow container*/
 #sidebar_content {
   background: #ffffdd;
+  border-radius: 5px;
+  /*padding: */
+  /*max-width:*/
 }
 /*footer orange container*/
 #site_footer {
   background: #ffddaa;/*orange*/
-  /*needs  same as nav buttons*/
-  font-size: 0.8.em;/*
+  text-align: center;
+  padding: 10px;
+  /*needs styling similar to nav buttons*/
+  /*font-size: 0.8.em;/*
   padding: 20px?;
   margin-top: 20px;
-  text-align: center;
   flex-basis: 100%;
 
   */
@@ -125,6 +133,13 @@ h1 #logo {
 
 Style items to create 3 columns
     */
+    #logo { order: 1;}
+    #main_nav { order: 2;}
+    header { order: 3;}
+    #main_content { order: 4;}
+    #sidebar_content { order: 5;}
+    #site_footer { order: 6;}
+
 }
 /** DESKTOP STYLES **/
 @media screen and ( min-width: 1100px ){
