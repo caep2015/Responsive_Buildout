@@ -35,13 +35,12 @@ a:hover{
 }
 
 /* header - only the area where the logo and nav links rest */
-header{
+header {
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;   /* purple devider*/
-    /*text-align: center;  note: center this in the media query* /
 }
-
+/* header text-align: center;  note: center this in the media query
 
 /* #site_container = white container
 spans >4 columns in desktop view
@@ -50,7 +49,7 @@ spans 1 column in mobile
 */
 
 /*white container*/
-#site_container{
+#site_container {
     padding: 20px;
     max-width: 1100px;
     margin: 0 auto;
@@ -68,6 +67,7 @@ spans 1 column in mobile
 }
 
 #logo {
+
   /*no changes needed in #logo*/
 }
 
@@ -88,10 +88,10 @@ h1 #logo {
     background: #ffdddd; /*pink*/
     margin-bottom: 5px;
     border-radius: 5px;
-    width: 95%;
+
 
 }
-/*makes pink navigation buttons turn purple */
+  /*makes pink navigation buttons turn purple */
 #main_nav a:hover{
     background: #ddddff; /*purple*/
 }
@@ -99,8 +99,9 @@ h1 #logo {
 
 /*yellow container*/
 #sidebar_content {
-  background: #ffffdd;
+  background: #ffffdd; /*yellow*/
   border-radius: 5px;
+  justify-content: space-around; /*test
   /*padding: */
   /*max-width:*/
 }
@@ -134,12 +135,12 @@ h1 #logo {
 
 Style items to create 3 columns
     */
-    #logo { order: 1;}
+    /*#logo { order: 1;}
     #main_nav { order: 2;}
     header { order: 3;}
     #main_content { order: 4;}
     #sidebar_content { order: 5;}
-    #site_footer { order: 6;}
+    #site_footer { order: 6;}*/
 
 }
 /** DESKTOP STYLES **/
@@ -177,9 +178,9 @@ Style items to create 3 columns
       flex: 0 1 35%;
     }
     */
-    main_content div {
+    /*main_content div {
 
-    }
+    }*/
 }
 
 /*
