@@ -1,8 +1,20 @@
 /* Reponsive Layout - Project 0703 */
 
-/**Mobile default styles** FIRST */
 
-/*body background green all viewports */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 body{
     font-family: Palatino, Times, serif;
     background-color: #ddffdd; /*green*/
@@ -33,21 +45,12 @@ a{
 a:hover{
     color: blue;
 }
-
 /* header - only the area where the logo and nav links rest */
 header {
     padding-bottom: 15px;
     margin-bottom: 20px;
     border-bottom: 2px solid #ddddff;   /* purple devider*/
 }
-/* header text-align: center;  note: center this in the media query
-
-/* #site_container = white container
-spans >4 columns in desktop view
-spans 3 columns in tablet view
-spans 1 column in mobile
-*/
-
 /*white container*/
 #site_container {
     padding: 20px;
@@ -57,30 +60,10 @@ spans 1 column in mobile
     box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     border-radius: 5px;
 }
-
-/*blue container*/
-#main_content {
-  background: #ddffff; /* blue */
-  border-radius: 5px;
-  /*padding: */
-  /*max-width:*/
-}
-
-#logo {
-
-  /*no changes needed in #logo*/
-}
-
-h1 #logo {
-/*this part is centered in the mobile view*/
-
-}
-
 /*  home about and contact us area logo and buttons sit */
 #main_nav{
     text-align: center;
 }
-
 /* pink navigation labels - column in mobile */
 #main_nav a{
     display: block;
@@ -88,104 +71,78 @@ h1 #logo {
     background: #ffdddd; /*pink*/
     margin-bottom: 5px;
     border-radius: 5px;
-
-
+    text-align: center;
 }
-  /*makes pink navigation buttons turn purple */
+/*makes pink navigation buttons turn purple */
 #main_nav a:hover{
     background: #ddddff; /*purple*/
 }
+/*blue container*/
+#main_content {
+  background: #ddffff; /* blue */
+  border-radius: 5px;
+  margin:10px;
+  padding:10px;
+}
 
-
+#logo {
+  text-align: center;
+}
 /*yellow container*/
 #sidebar_content {
   background: #ffffdd; /*yellow*/
   border-radius: 5px;
-  justify-content: space-around; /*test
-  /*padding: */
-  /*max-width:*/
+  margin: 10px;
+  padding: 10px;
 }
-
-/*footer orange container*/
 #site_footer {
-  background: #ffddaa;/*orange*/
+  background-color: #ffddaa;/*orange*/
   text-align: center;
   padding: 10px;
-  /*needs styling similar to nav buttons*/
-  /*font-size: 0.8.em;/*
-  padding: 20px?;
-  margin-top: 20px;
-  flex-basis: 100%;
-
-  */
+  margin: 10px;
 }
 
-#site_footer a {
-/*does not need sytling*/
-}
-
-
-/** 600 breakpoint**/
 @media screen and ( min-width: 600px ){
-   #main_nav a{
-        flex-basis: 45%;
-    }
-
-    /*add breakpoints here to
-
-Style items to create 3 columns
-    */
-    /*#logo { order: 1;}
-    #main_nav { order: 2;}
-    header { order: 3;}
-    #main_content { order: 4;}
-    #sidebar_content { order: 5;}
-    #site_footer { order: 6;}*/
-
+  #site_container {
+    display: flex;
+  }
+  #main_nav {
+    display: flex;
+  }
+  #main_nav a{
+    felx: 1 100%;
+    margin: 5px;
+  }
+  #sidebar_content {
+    display: flex;
+    justify-content: space-around;
+  }
+  #sidebar_content li {
+    flex: 1 100%;
+    margin: 5px;
+  }
 }
-/** DESKTOP STYLES **/
+
 @media screen and ( min-width: 1100px ){
-    nav {
-        flex-wrap: nowrap;
-    }
-
-    #main_nav a{
-        flex: 1;
-        flex-wrap:nowrap;
-        align-items: center;
-        flex-direction: row;
-    }
-
-    }
-    /* create two column layout with the two p tags in desktop view ONLY*/
-
-    #main_content {
-      display: flex;
-      /*flex-flow: row wrap;*/
-      /*justify-content: space-between;*/
-
-    #main_content {
-      flex: 1 100%;
-    }
-
-/* these next two entries are not changing it...target the div next
-    #main_content p {
-      flex: 0 1 60%;
-      margin-top: 0;
-    }
-
-    #main_content p:last-child ul{
-      flex: 0 1 35%;
-    }
-    */
-    /*main_content div {
-
-    }*/
+  header {
+    display:flex;
+  }
+  #main_nav {
+    margin:auto;
+    flex: 2;
+  }
+  #logo{
+    justify-content:flex-start;
+    flex: 1,auto;
+    text-shadow: left;
+  }
+  #main_content {
+    display: flex;
+  }
+  #main_content div:first-child {
+    flex: 2;
+  }
+  #main_content div:last-child {
+    flex: 1;
+  }
 }
-
-/*
-06:00 am things to do when I get back to my computer:
-- add a breakpoint for mobile view and add the centering of the logo there
-- add the breakpoints for the blue and yellow boxes.
-- submit last change to github
-*/
