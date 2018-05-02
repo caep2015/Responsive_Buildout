@@ -1,3 +1,5 @@
+The Iron Yard Week 2, Day 1: Responsive CSS layouts using flexbox and media queries.
+
 # Responsive_Buildout
 
 This project implements a responsive site with 2 break points. 
